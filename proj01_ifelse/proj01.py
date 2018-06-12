@@ -1,12 +1,3 @@
-# Name:
-# Date:
-
-# proj01: A Simple Program
-
-# Part I:
-# This program asks the user for his/her name and grade.
-#Then, it prints out a sentence that says the number of years until they graduate.
-
 print "HELLO WORLD!!!"
 Ur_Name = raw_input("What is your name?")
 print "Your name is " + Ur_Name[0].upper() + Ur_Name[1:].lower()
@@ -39,13 +30,7 @@ elif h=="no":
     print "Okay, i'll look for a freind somewhere else..."
 else:
     print "Okay, i'll look for a freind somewhere else..."
-
-# Part II:
-# This program asks the user for his/her name and birth month.
-# Then, it prints a sentence that says the number of days and months until their birthday
-
 print "Hello again " + Ur_Name[0].upper() + Ur_Name[1:].lower() + "!!"
-
 y= int(raw_input("What is the current day?[number]"))
 u= int(raw_input("What is the current month?[number]"))
 i= int(raw_input("What is your birth month[number]"))
@@ -59,20 +44,43 @@ if i>u:
 else:
     print "The number of months until your birthday is " + str( w) + "."
 
-if o>=y:
+if o >= y:
     print "The number of days until your birthday is " + str( e) + "."
 else:
     print "The number of days until your birthday is " + str( r) + "."
-
-age= raw_input("How old are you? [number]")
-if int(age)<13:
+age = raw_input("How old are you? [number]")
+if int(age) < 13:
     print "Your can watch G and PG movies only."
 elif int(age) >= 13 and int(age) < 17:
     print "You can watch G, PG, and PG-13 movies"
 else:
     print "You can watch G, PG, PG-13 and R rated movies"
-
-
-
-
-# If you complete extensions, describe your extensions here!
+movie = raw_input("Do you want to see a movie sometime?")
+if movie =="yes":
+    yes = raw_input("Is 6:30 tomarrow night okay?")
+    if yes == "yes":
+        print "Okay, It's a date!"
+elif movie =="sure":
+    yes = raw_input("Is 6:30 tomarrow night okay?")
+    if yes == "yes":
+        print "Okay, It's a date!"
+elif movie == "no":
+    confirm = raw_input("Okay, do you even want to go?")
+    if confirm == "yes":
+        new = raw_input("What time do you want to go?")
+    elif confirm == "sure":
+         new = raw_input("What time do you want to go?")
+    elif confirm == "no":
+          new = raw_input("Okay, I'll take my Spicy memes elsewhere.")
+    else:
+            new = raw_input("Okay, I'll take my Spicy memes elsewhere.")
+else:
+    confirm = raw_input("Okay, do you even want to go?")
+    if confirm == "yes":
+        new = raw_input("What time do you want to go?")
+    elif confirm == "sure":
+        new = raw_input("What time do you want to go?")
+    elif confirm == "no":
+        new = raw_input("Okay, I'll take my Spicy memes elsewhere.")
+    else:
+        new = raw_input("Okay, I'll take my Spicy memes elsewhere.")
